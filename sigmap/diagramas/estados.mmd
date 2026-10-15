@@ -1,0 +1,18 @@
+%%{init: {"flowchart": {"wrappingWidth": 500}, "themeVariables": {"fontSize": "16px"}} }%%
+stateDiagram-v2
+    [*] --> Abierta : Operador o supervisor<br/>reporta la falla
+
+    Abierta --> Asignada : Supervisor asigna tecnico<br/>(maquina pasa a en_mantenimiento)
+    Asignada --> EnProceso : Tecnico inicia el trabajo
+    EnProceso --> Cerrada : Cierre autorizado
+    Asignada --> Cerrada : Cierre autorizado
+
+    EnProceso --> EnProceso : Registro de<br/>analisis de causa raiz
+
+    Cerrada --> [*] : Se calcula downtime<br/>y se libera la maquina
+
+    note right of Cerrada
+        Regla de negocio:
+        una orden CORRECTIVA no puede
+        cerrarse sin analisis de causa raiz
+    end note

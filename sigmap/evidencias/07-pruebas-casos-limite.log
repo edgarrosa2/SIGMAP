@@ -1,0 +1,14 @@
+PASA   Login sin email/password -> esperado 401, obtenido 401 (Credenciales incorrectas)
+PASA   Crear orden con tipo fuera de dominio -> esperado 400, obtenido 400 (Tipo inválido. Use: preventivo, correctivo)
+PASA   Crear orden con prioridad fuera de dominio -> esperado 400, obtenido 400 (Prioridad inválida. Use: baja, media, alta, critica)
+PASA   Causa raíz con categoría fuera de dominio -> esperado 400, obtenido 400 (Categoría inválida. Use: maquina, metodo, material, mano_obra, medicion, medio_ambiente)
+PASA   Historial con id no numérico -> esperado 404, obtenido 404 (Máquina no encontrada)
+PASA   Historial de máquina inexistente -> esperado 404, obtenido 404 (Máquina no encontrada)
+PASA   Registrar causa raíz sobre orden ya cerrada (permitido por diseño: permite corregir el análisis) -> esperado 201, obtenido 201
+PASA   Crear máquina con tipo fuera de dominio -> esperado 400, obtenido 400 (Tipo inválido. Use: inyeccion, soplado, auxiliar)
+PASA   Asignar técnico con id no numérico -> esperado 400, obtenido 400 (El técnico indicado no existe)
+PASA   Crear orden sin maquina_id -> esperado 400, obtenido 400 (Faltan campos obligatorios)
+PASA   Asignar técnico sin tecnico_id -> esperado 400, obtenido 400 (Debe indicar el técnico a asignar)
+PASA   JSON malformado -> esperado 400, obtenido 400
+
+TODOS LOS CASOS LIMITE PASARON

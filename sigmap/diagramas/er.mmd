@@ -1,0 +1,61 @@
+%%{init: {"flowchart": {"wrappingWidth": 500}, "themeVariables": {"fontSize": "16px"}} }%%
+erDiagram
+    USUARIOS {
+        int id PK
+        string nombre
+        string email UK
+        string password_hash
+        string rol
+        datetime creado_en
+    }
+    MAQUINAS {
+        int id PK
+        string codigo UK
+        string nombre
+        string tipo
+        string area
+        string estado
+        datetime creado_en
+    }
+    ORDENES {
+        int id PK
+        string folio UK
+        int maquina_id FK
+        string tipo
+        string prioridad
+        string estado
+        string descripcion
+        int reportado_por FK
+        int tecnico_id FK
+        datetime abierta_en
+        datetime cerrada_en
+        int downtime_min
+    }
+    CAUSA_RAIZ {
+        int id PK
+        int orden_id FK,UK
+        string porque_1
+        string porque_2
+        string porque_3
+        string porque_4
+        string porque_5
+        string causa_identificada
+        string categoria
+        string accion_correctiva
+        int registrado_por FK
+        datetime registrado_en
+    }
+    NOTIFICACIONES {
+        int id PK
+        int usuario_id FK
+        string mensaje
+        int leida
+        datetime creada_en
+    }
+
+    MAQUINAS  ||--o{ ORDENES : "recibe"
+    USUARIOS  ||--o{ ORDENES : "reporta"
+    USUARIOS  ||--o{ ORDENES : "atiende como tecnico"
+    ORDENES   ||--o| CAUSA_RAIZ : "tiene analisis"
+    USUARIOS  ||--o{ CAUSA_RAIZ : "registra"
+    USUARIOS  ||--o{ NOTIFICACIONES : "recibe"

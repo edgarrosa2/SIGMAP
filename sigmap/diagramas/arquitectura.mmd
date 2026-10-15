@@ -1,0 +1,12 @@
+%%{init: {"flowchart": {"wrappingWidth": 900, "htmlLabels": true}, "themeVariables": {"fontSize": "16px"}} }%%
+flowchart TB
+    UI["<b>CAPA DE PRESENTACION</b> — React 19 + Vite (navegador)<br/>Componentes: Login · Dashboard · Ordenes · Maquinas · Reportes<br/>api.js: cliente HTTP centralizado que inyecta el token JWT"]
+    MW["<b>CAPA DE APLICACION</b> — Node.js + Express<br/>Middleware: auth (verifica JWT) · permitir (valida rol)<br/>Rutas REST /api: auth · maquinas · ordenes · causa-raiz · reportes · notificaciones<br/>Reglas de negocio: folio automatico · calculo de downtime · bloqueo de cierre sin causa raiz · notificaciones"]
+    DB[("<b>CAPA DE DATOS</b> — SQLite<br/>usuarios · maquinas · ordenes · causa_raiz · notificaciones<br/>Claves foraneas activas + restricciones CHECK")]
+
+    UI -->|"HTTP / JSON — Authorization: Bearer token"| MW
+    MW -->|"better-sqlite3 — consultas preparadas"| DB
+
+    style UI fill:#e4eefb,stroke:#1f3864,stroke-width:2px
+    style MW fill:#eceef3,stroke:#1f3864,stroke-width:2px
+    style DB fill:#e3f3ea,stroke:#1e7f4f,stroke-width:2px

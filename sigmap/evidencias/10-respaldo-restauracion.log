@@ -1,0 +1,7 @@
+Respaldo creado: ../database/respaldos/sigmap-20261014223336.db (56.0 KB)
+--- Alteramos la base: borramos las notificaciones ---
+notificaciones tras el borrado: 0
+--- Restauramos desde el respaldo ---
+Base restaurada desde sigmap-20261014223336.db (6 ordenes).
+Reinicie el servidor para que use la base restaurada.
+notificaciones tras restaurar: 3

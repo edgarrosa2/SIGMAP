@@ -1,0 +1,29 @@
+%%{init: {"flowchart": {"wrappingWidth": 500}, "themeVariables": {"fontSize": "16px"}} }%%
+flowchart LR
+    OP(("Operador")) --- UC2["Reportar falla"]
+    OP --- UC3["Consultar ordenes"]
+    OP --- UC10["Recibir notificaciones"]
+
+    TE(("Tecnico")) --- UC4["Registrar causa raiz"]
+    TE --- UC5["Actualizar estado de orden"]
+    TE --- UC3
+    TE --- UC10
+
+    SU(("Supervisor")) --- UC6["Asignar tecnico"]
+    SU --- UC7["Registrar maquina"]
+    SU --- UC5
+    SU --- UC8["Consultar historial de maquina"]
+
+    GE(("Gerencia")) --- UC9["Consultar reportes e indicadores"]
+    GE --- UC8
+    GE --- UC7
+
+    UC1["Iniciar sesion"] --- OP
+    UC1 --- TE
+    UC1 --- SU
+    UC1 --- GE
+
+    style OP fill:#e4eefb,stroke:#1f3864
+    style TE fill:#fdf1dc,stroke:#b4740b
+    style SU fill:#e3f3ea,stroke:#1e7f4f
+    style GE fill:#fbe6e5,stroke:#b3261e

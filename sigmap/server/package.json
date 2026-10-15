@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "SIGMAP API. Usa el módulo nativo node:sqlite (Node 22.5+), sin dependencias que requieran compilación.",
+  "main": "index.js",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "test": "node test-api.js && node test-edge-cases.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
+  }
+}

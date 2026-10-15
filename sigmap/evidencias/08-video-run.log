@@ -1,0 +1,15 @@
+captura: 01-login
+captura: 02-dashboard-operador
+captura: 03-nueva-orden-formulario
+captura: 04-orden-creada
+captura: 05-dashboard-supervisor
+captura: 06-detalle-antes-asignar
+captura: 07-tecnico-asignado
+captura: 08-tecnico-ve-orden-asignada
+captura: 09-rechazo-cierre-sin-causa-raiz
+captura: 10-formulario-causa-raiz
+captura: 11-causa-raiz-guardada
+captura: 12-orden-cerrada-con-downtime
+captura: 13-historial-actualizado
+captura: 14-reportes-actualizados
+LISTO — video guardado en /home/claude/evidencias/video

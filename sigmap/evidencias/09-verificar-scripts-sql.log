@@ -1,0 +1,9 @@
+Tabla            Original  Reconstruida  Resultado
+usuarios                4             4  OK
+maquinas                6             6  OK
+ordenes                 6             6  OK
+causa_raiz              3             3  OK
+notificaciones          3             3  OK
+Violaciones de clave foranea tras la carga: 0
+
+LOS SCRIPTS REPRODUCEN LA BASE DE DATOS

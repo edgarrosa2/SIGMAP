@@ -1,0 +1,10 @@
+src/componentes/Dashboard.jsx:22:21: Calling setState synchronously within an effect can trigger cascading renders [Warning/react(set-state-in-effect)]
+src/componentes/Maquinas.jsx:18:21: Calling setState synchronously within an effect can trigger cascading renders [Warning/react(set-state-in-effect)]
+src/componentes/Comunes.jsx:37:17: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components. [Warning/react(only-export-components)]
+src/componentes/Comunes.jsx:42:17: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components. [Warning/react(only-export-components)]
+src/componentes/Comunes.jsx:49:14: Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components. [Warning/react(only-export-components)]
+src/componentes/Ordenes.jsx:38:21: Calling setState synchronously within an effect can trigger cascading renders [Warning/react(set-state-in-effect)]
+src/componentes/Ordenes.jsx:38:21: React Hook useEffect has a missing dependency: 'cargar' [Warning/react-hooks(exhaustive-deps)]
+src/componentes/Ordenes.jsx:43:7: React Hook useEffect has a missing dependency: 'limpiarOrdenInicial' [Warning/react-hooks(exhaustive-deps)]
+
+8 problems

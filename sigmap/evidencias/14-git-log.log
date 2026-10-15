@@ -1,0 +1,4 @@
+4c6f9e5 (HEAD -> main, tag: v1.0.0) Fases 2 a 6: scripts SQL, respaldo, pruebas estrictas, autorizacion por rol y evidencias
+59fb3f3 Migra de better-sqlite3 a node:sqlite (sin compilacion nativa)
+92ba177 Incluye suite de pruebas de casos limite y actualiza README
+aede0a7 SIGMAP: sistema de gestion de mantenimiento industrial

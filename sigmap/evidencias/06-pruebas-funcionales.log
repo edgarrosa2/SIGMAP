@@ -1,0 +1,30 @@
+PASA  Login rechaza credenciales incorrectas
+PASA  Login correcto (gerencia)
+PASA  Login correcto (supervisor)
+PASA  Login correcto (tecnico)
+PASA  Login correcto (operador)
+PASA  Endpoint protegido rechaza petición sin token
+PASA  Lista de máquinas
+PASA  Operador no puede crear máquinas (403)
+PASA  Supervisor crea máquina
+PASA  Rechaza código de máquina duplicado
+PASA  Operador reporta una falla :: folio OT-1008
+PASA  Supervisor recibe notificación por orden de prioridad alta
+PASA  Técnico no puede asignar órdenes (403)
+PASA  Supervisor asigna técnico
+PASA  Máquina cambia a estado en_mantenimiento
+PASA  Operador no puede cambiar el estado de una orden (403)
+PASA  Bloquea cierre de correctivo sin causa raíz (400) :: Debe registrar el análisis de causa raíz antes de cerrar una orden correctiva
+PASA  Registra análisis de causa raíz
+PASA  Rechaza causa raíz sin campos obligatorios (400)
+PASA  Cierra la orden y calcula downtime :: downtime 1 min
+PASA  Máquina vuelve a operativa al no tener órdenes pendientes
+PASA  No permite reasignar una orden cerrada (400)
+PASA  Filtro por tipo de orden
+PASA  Historial de máquina con indicadores :: downtime total 600 min
+PASA  Reporte resumen con indicadores :: órdenes 8
+PASA  Detalle de orden incluye su análisis de causa raíz
+PASA  Rechaza token inválido
+PASA  Orden inexistente devuelve 404
+
+TODAS LAS PRUEBAS PASARON
