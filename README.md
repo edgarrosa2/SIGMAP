@@ -1,5 +1,5 @@
 [README.md](https://github.com/user-attachments/files/33509231/README.md)
-# SIGMAP — Sistema de Gestión de Mantenimiento Industrial
+# SIGMAP - Sistema de Gestión de Mantenimiento Industrial
 
 Sistema web para gestionar el mantenimiento preventivo y correctivo de maquinaria
 industrial, con registro obligatorio del análisis de causa raíz (5 porqués + 6M)
